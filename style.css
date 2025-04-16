@@ -1,0 +1,540 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #212121;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+body a {
+  color: white;
+  text-decoration: none;
+}
+
+.main {
+  padding: 2vw 4vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15vw;
+  overflow-x: hidden;
+}
+.main .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .nav .logo {
+  font-size: 2vw;
+}
+.main .nav .nav-links {
+  display: flex;
+  gap: 2vw;
+  list-style: none;
+}
+.main .nav .nav-links h3 {
+  font-size: 1vw;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+}
+.main .nav .nav-links h3:hover {
+  color: #FF4C00;
+}
+.main .section-1 {
+  width: 100%;
+  position: relative;
+}
+.main .section-1 .key {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 10;
+}
+.main .section-1 .details {
+  width: 57%;
+  padding: 0 1vw;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50%;
+  margin-top: 20%;
+  transform: translate(-50%, -50%);
+}
+.main .section-1 .details .first {
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+}
+.main .section-1 .details .first .line {
+  width: 80%;
+  height: 0.5vw;
+  background-color: #baa876;
+}
+.main .section-1 .details .first h1 {
+  font-size: 3.5vw;
+}
+.main .section-1 .details .second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+.main .section-1 .details .second h1 {
+  font-size: 7vw;
+  text-transform: uppercase;
+  font-family: "kinova";
+}
+.main .section-1 .details .second h1:hover {
+  -webkit-text-stroke: 0.1px;
+  -webkit-text-fill-color: transparent;
+}
+.main .section-1 .details .third {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.main .section-1 .details .third h1 {
+  font-size: 1.8vw;
+  width: 40%;
+  color: #baa876;
+  text-transform: uppercase;
+  text-align: end;
+}
+.main .section-1 .social {
+  display: flex;
+  justify-content: space-between;
+}
+.main .section-1 .social .icons {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+.main .section-1 .social .icons i {
+  font-size: 2vw;
+  cursor: pointer;
+}
+.main .section-1 .social h5 {
+  font-size: 1.2vw;
+  text-transform: uppercase;
+  transform: rotate(90deg);
+}
+.main .section-1 .email {
+  display: flex;
+  justify-content: center;
+}
+.main .section-1 .email button {
+  padding: 1vw;
+  background-color: transparent;
+  border: 1px solid #baa876;
+  border-radius: 50px;
+  color: white;
+  font-size: 1vw;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.main .section-1 .email button:hover {
+  background-color: #baa876;
+  color: black;
+}
+.main .section-2 {
+  width: 100%;
+  gap: 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2vw;
+}
+.main .section-2 .image {
+  width: 30%;
+  height: 100%;
+}
+.main .section-2 .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  opacity: 0.7;
+}
+.main .section-2 .about-me {
+  width: 70%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2vw;
+  gap: 2vw;
+}
+.main .section-2 .about-me h1 {
+  font-size: 3.5vw;
+  text-transform: uppercase;
+  font-family: "kinova";
+  text-align: start;
+  line-height: 1.5;
+}
+.main .section-2 .about-me p {
+  font-size: 1vw;
+  opacity: 2425;
+  text-align: start;
+  line-height: 1.5;
+  font-family: monospace;
+}
+.main .section-2 .about-me .profession {
+  color: #baa876;
+}
+.main .section-2 .profession {
+  color: #baa876;
+}
+.main .section-2 h1 {
+  font-size: 3vw;
+  text-transform: upperc2425;
+  text-align: start;
+  line-height: 1.5;
+}
+.main .section-2 p {
+  font-size: 1.2vw;
+  opacity: 2425;
+  text-align: start;
+  line-height: 1.5;
+}
+.main .section-3 {
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  justify-content: space-around;
+  font-family: "kinova";
+  gap: 2vw;
+}
+.main .section-3 .left {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  flex-direction: column;
+}
+.main .section-3 .left h2 {
+  font-size: 3vw;
+  text-transform: uppercase;
+  text-align: start;
+  line-height: 1.5;
+}
+.main .section-3 .left h4 {
+  font-size: 1vw;
+  text-transform: uppercase;
+  margin-right: auto;
+}
+.main .section-3 .right {
+  height: 100%;
+  width: 30%;
+}
+.main .section-3 .right img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.main .section-5 {
+  width: 100%;
+  height: 100vh;
+}
+.main .section-5 .tech-head {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.main .section-5 .tech-head h1 {
+  font-size: 5vw;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.5;
+  font-family: "kinova";
+  text-align: start;
+}
+.main .section-5 .tech-head .line {
+  width: 35%;
+  height: 0.5vw;
+  margin-left: auto;
+  background-color: #baa876;
+  align-items: start;
+  margin-left: 0;
+}
+.main .section-5 .stack-grid {
+  margin-top: 12vw;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.main .section-5 .tech-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.05);
+  width: 12vw;
+  height: 12vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.main .section-5 .tech-card img {
+  width: 7vw;
+  height: 7vw;
+  -o-object-fit: contain;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 5px rgba(0, 255, 255, 0.4392156863));
+}
+.main .section-5 .tech-card p {
+  margin: 0vw;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+.main .section-5 .tech-card:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+.main .section-6 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main .section-6 .name .line {
+  width: 30%;
+  height: 0.5vw;
+  margin-left: auto;
+  background-color: #baa876;
+  align-items: start;
+  margin-left: 0;
+}
+.main .section-6 h1 {
+  font-size: 5vw;
+  text-transform: uppercase;
+  margin-left: auto;
+  line-height: 1.5;
+  font-family: "kinova";
+}
+.main .section-6 .project {
+  display: flex;
+  width: 100%;
+  margin-top: 10vw;
+  justify-content: space-between;
+}
+.main .section-6 .project:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+.main .section-6 .project .left .image {
+  width: 30vw;
+  height: 100%;
+}
+.main .section-6 .project .left .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.main .section-6 .project .right {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.main .section-6 .project .right .icons {
+  margin-left: auto;
+  display: flex;
+  gap: 1.5vw;
+}
+.main .section-6 .project .right .icons a {
+  text-decoration: none;
+  color: white;
+  font-size: 2vw;
+  transition: all 0.3s ease-in-out;
+}
+.main .section-6 .project .right .icons i {
+  font-size: 2vw;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.main .section-6 .project .right h1 {
+  font-size: 3vw;
+  text-transform: uppercase;
+  opacity: 0.3;
+}
+.main .section-6 .project .right h2 {
+  font-size: 5vw;
+  text-transform: uppercase;
+}
+.main .section-6 .project .right p {
+  font-size: 1.2vw;
+  width: 80%;
+  margin-top: 2vw;
+}
+.main .section-7 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4vw;
+}
+.main .section-7 .certificate {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.main .section-7 .certificate h1 {
+  font-size: 5vw;
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-family: "kinova";
+}
+.main .section-7 .certificate .line {
+  width: 40%;
+  height: 0.5vw;
+  margin-left: auto;
+  background-color: #baa876;
+  align-items: start;
+  margin-left: 0;
+}
+.main .section-7 .content {
+  width: 80%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2vw;
+}
+.main .section-7 .content h4 {
+  font-size: 1.6vw;
+  text-transform: uppercase;
+  margin-left: auto;
+  font-family: "kinova";
+  position: relative;
+  z-index: 10;
+}
+.main .section-7 .content h4 span {
+  font-size: 4vw;
+  margin-right: 2vw;
+  font-family: monospace;
+}
+.main .section-7 .content img {
+  height: 20vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 100;
+}
+.main .footer {
+  width: 100%;
+}
+.main .footer h5 {
+  font-size: 0.8vw;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.5;
+}
+@media (max-width: 768px) {
+  .main .nav .logo {
+    font-size: 5vw;
+  }
+  .main .nav .nav-links h3 {
+    font-size: 1.5vw;
+  }
+  .main .section-1 {
+    height: 60vh;
+  }
+  .main .section-1 .key {
+    top: 25%;
+    height: 80vw;
+  }
+  .main .section-1 .details {
+    margin-top: 80%;
+    gap: 2vw;
+    width: 80%;
+  }
+  .main .section-1 .details .second h1 {
+    font-size: 10vw;
+  }
+  .main .section-1 .details .third h1 {
+    font-size: 4vw;
+  }
+  .main .section-1 .social .icons i {
+    font-size: 5vw;
+  }
+  .main .section-1 .social h5 {
+    font-size: 2.5vw;
+  }
+  .main .section-1 .email button {
+    padding: 2vw;
+    font-size: 2vw;
+  }
+  .main .section-2 {
+    margin-top: 10vw;
+  }
+  .main .section-2 .image {
+    width: 40%;
+  }
+  .main .section-2 .about-me h1 {
+    font-size: 5vw;
+  }
+  .main .section-2 .about-me p {
+    font-size: 1.7vw;
+  }
+  .main .section-3 {
+    gap: 3vw;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .main .section-3 .left h2 {
+    font-size: 3.5vw;
+  }
+  .main .section-3 .left h4 {
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    margin-right: auto;
+  }
+  .main .section-5 {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .main .section-5 .tech-card {
+    width: 25vw;
+    height: 25vw;
+  }
+  .main .section-6 {
+    gap: 10vw;
+  }
+  .main .section-6 .name .line {
+    width: 30%;
+  }
+  .main .section-6 h1 {
+    font-size: 5vw;
+  }
+  .main .section-6 .project .right .icons i {
+    font-size: 3vw;
+  }
+  .main .section-6 .project .right p {
+    font-size: 1.6vw;
+  }
+  .main .section-7 .certificate h1 {
+    font-size: 5vw;
+  }
+  .main .section-7 .certificate .line {
+    width: 40%;
+  }
+  .main .footer h5 {
+    font-size: 1.5vw;
+  }
+}/*# sourceMappingURL=style.css.map */
