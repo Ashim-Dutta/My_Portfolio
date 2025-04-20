@@ -436,6 +436,35 @@ body a {
   opacity: 0;
   z-index: 100;
 }
+
+.main .section-8 {
+  width: 100%;
+  background-color: lawngreen;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+}
+.main .section-8 #move {
+  display: flex;
+  gap: 2vw;
+  padding: 3vw 0;
+  overflow: hidden;
+}
+.main .section-8 #move .marquee {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 3vw;
+  transform: translateX(-100%);
+}
+.main .section-8 #move .marquee h5 {
+  color: black;
+  font-size: 4vw;
+  font-family: monospace;
+}
+.main .section-8 #move .marquee img {
+  height: 4vw;
+}
 .main .footer {
   width: 100%;
 }
