@@ -646,6 +646,37 @@ body{
 }
 
 
+    .section-8{
+    width: 100%;
+    background-color: lawngreen;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    #move{
+        display: flex;
+        gap: 2vw;
+       padding: 3vw 0;
+       overflow: hidden;
+        .marquee{
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            gap: 3vw;
+            transform: translateX(-100%);
+        h5{
+        color:black;
+        font-size: 4vw;
+        font-family: monospace;
+    }
+    img{
+        height: 4vw;
+    }
+    }
+    }
+    
+}
+
+
 
 .footer{
     width: 100%;
