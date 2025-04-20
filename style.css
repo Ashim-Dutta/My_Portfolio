@@ -18,7 +18,6 @@ body a {
 }
 
 .main {
-  padding: 2vw 4vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,6 +26,7 @@ body a {
   overflow-x: hidden;
 }
 .main .nav {
+  padding: 2vw 4vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,6 +49,7 @@ body a {
   color: #FF4C00;
 }
 .main .section-1 {
+  padding: 2vw 4vw;
   width: 100%;
   position: relative;
 }
@@ -147,6 +148,7 @@ body a {
   color: black;
 }
 .main .section-2 {
+  padding: 2vw 4vw;
   width: 100%;
   gap: 5vw;
   display: flex;
@@ -207,6 +209,7 @@ body a {
   line-height: 1.5;
 }
 .main .section-3 {
+  padding: 2vw 4vw;
   display: flex;
   width: 100%;
   height: 50vh;
@@ -244,6 +247,7 @@ body a {
   object-fit: cover;
 }
 .main .section-5 {
+  padding: 2vw 4vw;
   width: 100%;
   height: 100vh;
 }
@@ -308,6 +312,7 @@ body a {
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
 }
 .main .section-6 {
+  padding: 2vw 4vw;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -383,6 +388,7 @@ body a {
   margin-top: 2vw;
 }
 .main .section-7 {
+  padding: 2vw 4vw;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -436,7 +442,6 @@ body a {
   opacity: 0;
   z-index: 100;
 }
-
 .main .section-8 {
   width: 100%;
   background-color: lawngreen;
