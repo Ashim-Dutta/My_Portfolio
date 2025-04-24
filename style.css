@@ -568,6 +568,9 @@ body a {
   .main .section-7 .certificate .line {
     width: 40%;
   }
+  .main .section-8 {
+    display: none;
+  }
   .main .footer h5 {
     font-size: 1.5vw;
   }
