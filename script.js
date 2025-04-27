@@ -126,3 +126,9 @@ window.addEventListener("wheel", function (dets) {
   }
 })
   
+gsap.to(" .intro-1", {
+  y: -1000,
+  stagger: 0.1,
+  duration: 0.6,
+  ease: "power2.in",
+})
