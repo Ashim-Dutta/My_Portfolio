@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Project — Ashim Dutta</title>
+  <link rel="stylesheet" href="projects.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link href="https://fonts.cdnfonts.com/css/kinova" rel="stylesheet">
+  <style>
+    body { margin: 0; padding: 0; background: #0a0e27; color: #fff; font-family: 'Arial', sans-serif; }
+    .project-detail { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+    .back { display: inline-flex; align-items: center; gap: 0.5rem; color: #baa876; text-decoration: none; margin-bottom: 2rem; transition: all .3s ease; }
+    .back:hover { gap: 1rem; }
+    .project-header { margin-bottom: 3rem; }
+    .project-header h1 { font-size: 2.2rem; margin: 0 0 1rem 0; background: linear-gradient(135deg, #fff, #baa876); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .project-meta { display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 2rem; }
+    .meta-item { display: flex; flex-direction: column; gap: 0.5rem; }
+    .meta-label { font-size: 0.85rem; color: rgba(255,255,255,0.6); text-transform: uppercase; letter-spacing: 1px; }
+    .tech-stack { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .tech-badge { padding: 0.5rem 1rem; background: rgba(186,168,118,0.15); border: 1px solid rgba(186,168,118,0.3); border-radius: 8px; font-size: 0.9rem; color: #eae0c8; }
+    .project-section { margin-bottom: 2.5rem; }
+    .project-section h2 { font-size: 1.4rem; margin: 0 0 1rem 0; color: #baa876; }
+    .project-section p { line-height: 1.8; color: rgba(255,255,255,0.85); }
+    .project-demo { background: linear-gradient(135deg, rgba(186,168,118,0.08), rgba(255,255,255,0.02)); border: 1px solid rgba(186,168,118,0.2); border-radius: 12px; padding: 2rem; text-align: center; }
+    .project-demo img { max-width: 100%; height: auto; border-radius: 8px; }
+    .demo-placeholder { color: rgba(255,255,255,0.6); font-style: italic; }
+    .cta-buttons { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem; }
+    .cta-btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, #baa876, #a89460); border: none; border-radius: 8px; color: #0a0e27; font-weight: 600; cursor: pointer; text-decoration: none; transition: all .3s ease; }
+    .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(186,168,118,0.3); }
+    .cta-btn-secondary { background: linear-gradient(135deg, rgba(186,168,118,0.2), rgba(186,168,118,0.1)); color: #baa876; border: 1px solid rgba(186,168,118,0.4); }
+    .cta-btn-secondary:hover { background: linear-gradient(135deg, rgba(186,168,118,0.3), rgba(186,168,118,0.2)); }
+  </style>
+</head>
+<body>
+  <main class="project-detail">
+    <a class="back" href="projects.html"><i class="ri-arrow-left-line"></i> Back to projects</a>
+    
+    <div class="project-header">
+      <h1 id="title">Loading Project...</h1>
+      <div class="project-meta">
+        <div class="meta-item">
+          <span class="meta-label">Status</span>
+          <span id="status">—</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Tech Stack</span>
+          <div class="tech-stack" id="tech-stack"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-demo">
+      <img id="demo-image" src="" alt="Project demo" style="display: none; max-width: 100%; border-radius: 8px;" />
+      <p id="demo-text" class="demo-placeholder">Demo visualization or screenshot will appear here</p>
+    </div>
+
+    <div class="project-section">
+      <h2>Overview</h2>
+      <p id="description">Project description will load here.</p>
+    </div>
+
+    <div class="project-section">
+      <h2>Challenge & Solution</h2>
+      <p id="challenge">Details about the challenge and solution approach.</p>
+    </div>
+
+    <div class="project-section">
+      <h2>Key Features</h2>
+      <ul id="features" style="line-height: 2; color: rgba(255,255,255,0.85);">
+        <li>Feature 1</li>
+        <li>Feature 2</li>
+      </ul>
+    </div>
+
+    <div class="cta-buttons">
+      <a id="live-link" class="cta-btn" href="#" target="_blank" rel="noopener noreferrer">
+        <i class="ri-external-link-line"></i> View Live
+      </a>
+      <a id="code-link" class="cta-btn cta-btn-secondary" href="#" target="_blank" rel="noopener noreferrer">
+        <i class="ri-github-line"></i> View Code
+      </a>
+    </div>
+  </main>
+
+  <script>
+    // Project database with full details
+    const projects = {
+      1: {
+        title: "Disney+ Hotstar — UI Clone",
+        status: "Featured",
+        tech: ["React", "Tailwind", "Framer Motion"],
+        image: "p-1.png",
+        description: "A streaming platform UI clone built with React and Tailwind CSS. This project recreates the core UI components and layout of Disney+ Hotstar, focusing on responsive design, performance optimization, and accessibility standards.",
+        challenge: "The main challenge was creating a scalable component architecture while maintaining smooth animations and ensuring the interface works seamlessly on different device sizes. We optimized bundle size by implementing lazy loading for content and using CSS Grid for layout efficiency.",
+        features: [
+          "Responsive hero banner with dynamic content",
+          "Category carousel with smooth scrolling",
+          "Play button overlay interactions",
+          "Search functionality with debouncing",
+          "Mobile-first responsive design",
+          "Accessibility (WCAG 2.1 AA compliant)"
+        ],
+        liveLink: "https://streaming-ui-demo.vercel.app",
+        codeLink: "https://github.com/ashim-dutta/disney-hotstar-clone"
+      },
+      2: {
+        title: "Obys Agency — Motion Site",
+        status: "Interaction",
+        tech: ["GSAP", "HTML/CSS", "JavaScript"],
+        image: "p-2.png",
+        description: "A creative agency portfolio featuring fluid micro-interactions and scroll-based animations. Built with GSAP for smooth transitions and modern CSS, this site showcases the power of motion design in web interfaces.",
+        challenge: "Creating performant animations that don't tank frame rates was the key challenge. We implemented GPU-accelerated transforms, optimized GSAP timelines, and used IntersectionObserver for scroll triggers to ensure 60fps performance.",
+        features: [
+          "GSAP timeline animations on scroll",
+          "Cursor-following effects",
+          "Staggered text reveals",
+          "Smooth page transitions",
+          "GPU-optimized transform animations",
+          "Mobile-friendly interaction fallbacks"
+        ],
+        liveLink: "https://obys-agency-motion.vercel.app",
+        codeLink: "https://github.com/ashim-dutta/obys-agency-clone"
+      },
+      3: {
+        title: "Nexus SaaS — Concept",
+        status: "Concept",
+        tech: ["React", "Node.js", "MongoDB", "Socket.io"],
+        image: "p-3.png",
+        description: "A conceptual SaaS product focused on real-time collaboration, team communication, and workflow management. This full-stack prototype demonstrates modern app architecture patterns and user experience design.",
+        challenge: "Building a real-time collaborative platform required handling WebSocket connections, state synchronization across clients, and ensuring data consistency. We used Socket.io for real-time updates and implemented optimistic UI updates.",
+        features: [
+          "Real-time team collaboration",
+          "Live chat and notifications",
+          "Project management dashboard",
+          "User authentication & role-based access",
+          "Activity timeline & audit logs",
+          "Responsive design with dark mode"
+        ],
+        liveLink: "https://nexus-saas-demo.herokuapp.com",
+        codeLink: "https://github.com/ashim-dutta/nexus-saas"
+      },
+      4: {
+        title: "LuxStay — Property UX",
+        status: "Product",
+        tech: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
+        image: "p-4.png",
+        description: "A property booking platform with a focus on user experience and conversion optimization. Built with Next.js for server-side rendering and TypeScript for type safety, this project demonstrates modern full-stack development.",
+        challenge: "Optimizing search performance with millions of listings and handling payment processing securely were major challenges. We implemented server-side filtering, caching strategies, and PCI-compliant payment integration.",
+        features: [
+          "Advanced search & filtering",
+          "Map-based property discovery",
+          "Secure payment processing (Stripe)",
+          "User reviews & ratings",
+          "Booking management system",
+          "Mobile app responsive design"
+        ],
+        liveLink: "https://luxstay-booking.vercel.app",
+        codeLink: "https://github.com/ashim-dutta/luxstay-booking"
+      },
+      5: {
+        title: "UI Experiment — Micro-Interactions",
+        status: "Demo",
+        tech: ["Design", "Components", "Framer", "React"],
+        image: "p-1.png",
+        description: "A collection of experimental micro-interactions and interactive components. This project serves as a design system showcase demonstrating principles of delightful UX through subtle animations and feedback.",
+        challenge: "Creating a cohesive design language across diverse components while maintaining consistency and performance required establishing clear design tokens and interaction patterns.",
+        features: [
+          "Button state animations",
+          "Form validation feedback",
+          "Loading state patterns",
+          "Notification toast system",
+          "Modal & dialog interactions",
+          "Design tokens documentation"
+        ],
+        liveLink: "https://micro-interactions-lab.vercel.app",
+        codeLink: "https://github.com/ashim-dutta/micro-interactions"
+      },
+      6: {
+        title: "Realtime Chat — POC",
+        status: "POC",
+        tech: ["WebSocket", "Node.js", "React", "Redis"],
+        image: "p-2.png",
+        description: "A proof-of-concept for real-time chat and collaboration features. This project demonstrates WebSocket communication patterns and how to handle multiple concurrent connections efficiently.",
+        challenge: "Managing connection stability, handling message ordering, and scaling to multiple server instances required implementing connection pooling, message queues, and session persistence with Redis.",
+        features: [
+          "Real-time message delivery",
+          "Typing indicators",
+          "Online user presence",
+          "Message history & search",
+          "Room-based conversations",
+          "Connection auto-reconnect"
+        ],
+        liveLink: "https://realtime-chat-poc.herokuapp.com",
+        codeLink: "https://github.com/ashim-dutta/realtime-chat-poc"
+      },
+      7: {
+        title: "E-commerce — Cart UX",
+        status: "Case Study",
+        tech: ["Performance", "Accessibility", "React", "UX"],
+        image: "p-3.png",
+        description: "A detailed case study on optimizing e-commerce checkout flow for conversion. This project focuses on performance metrics, accessibility compliance, and user behavior analysis.",
+        challenge: "Reducing cart abandonment rate required A/B testing different checkout flows, optimizing page load speed, and implementing trust signals. We achieved a 34% improvement in conversion rate.",
+        features: [
+          "One-page checkout flow",
+          "Multiple payment methods",
+          "Guest checkout option",
+          "Progress indicators",
+          "Error prevention & recovery",
+          "Mobile-optimized forms"
+        ],
+        liveLink: "https://ecommerce-checkout-demo.vercel.app",
+        codeLink: "https://github.com/ashim-dutta/ecommerce-ux-study"
+      },
+      8: {
+        title: "Design System — Tokens",
+        status: "Toolkit",
+        tech: ["Design", "System", "Figma", "Tokens"],
+        image: "p-4.png",
+        description: "A comprehensive design system with semantic tokens for colors, spacing, typography, and components. This toolkit ensures consistency across products and accelerates design-to-development handoff.",
+        challenge: "Creating a scalable token system that works across web, mobile, and design tools required establishing clear naming conventions and version management strategies.",
+        features: [
+          "Semantic color tokens",
+          "Spacing scale system",
+          "Typography hierarchy",
+          "Component library",
+          "Design documentation",
+          "Token export for developers"
+        ],
+        liveLink: "https://design-tokens-showcase.vercel.app",
+        codeLink: "https://github.com/ashim-dutta/design-system-tokens"
+      }
+    };
+
+    // Load project data
+    function loadProject() {
+      const params = new URLSearchParams(location.search);
+      const id = params.get('id') || '1';
+      const project = projects[id];
+
+      if (!project) {
+        document.querySelector('.project-header h1').textContent = 'Project not found';
+        return;
+      }
+
+      // Update page title
+      document.title = `${project.title} — Ashim Dutta`;
+
+      // Update content
+      document.getElementById('title').textContent = project.title;
+      document.getElementById('status').textContent = project.status;
+      document.getElementById('description').textContent = project.description;
+      document.getElementById('challenge').textContent = project.challenge;
+
+      // Tech stack
+      const techStack = document.getElementById('tech-stack');
+      techStack.innerHTML = project.tech.map(t => `<span class="tech-badge">${t}</span>`).join('');
+
+      // Features
+      const features = document.getElementById('features');
+      features.innerHTML = project.features.map(f => `<li>${f}</li>`).join('');
+
+      // Demo image
+      const demoImg = document.getElementById('demo-image');
+      if (project.image) {
+        demoImg.src = project.image;
+        demoImg.style.display = 'block';
+        document.getElementById('demo-text').style.display = 'none';
+      }
+
+      // Links
+      document.getElementById('live-link').href = project.liveLink;
+      document.getElementById('code-link').href = project.codeLink;
+    }
+
+    // Initialize on page load
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', loadProject);
+    } else {
+      loadProject();
+    }
+  </script>
+</body>
+</html>

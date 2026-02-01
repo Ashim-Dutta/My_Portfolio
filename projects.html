@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>All Projects — Ashim Dutta</title>
+  <link rel="stylesheet" href="projects.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link href="https://fonts.cdnfonts.com/css/kinova" rel="stylesheet">
+</head>
+<body>
+  <header class="proj-header">
+    <div class="proj-nav">
+      <div class="logo"><a href="index.html"><i class="ri-code-s-slash-line"></i></a></div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+    <div class="proj-hero">
+      <div class="hero-content">
+        <h1>All Projects</h1>
+        <p>Showcasing a collection of experiments, demos and production work — built with modern web tech and immersive 3D interactions.</p>
+      </div>
+      <canvas id="bg-canvas"></canvas>
+    </div>
+  </header>
+
+  <main class="projects-grid">
+    <div class="cards">
+      <article class="card">
+        <a class="card-link" href="project.html?id=1">
+          <div class="thumb"><img src="p-1.png" alt="Demo 1 screenshot"></div>
+          <div class="card-body">
+            <h3>Disney+ Hotstar — UI Clone</h3>
+            <p>Streaming UI rebuilt with React and Tailwind — focus on performance and accessibility.</p>
+            <div class="meta"><div class="tags"><span class="tag">React</span><span class="tag">Tailwind</span></div><div class="actions"><span class="badge">Featured</span></div></div>
+          </div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a class="card-link" href="project.html?id=2">
+          <div class="thumb"><img src="p-2.png" alt="Demo 2 screenshot"></div>
+          <div class="card-body">
+            <h3>Obys Agency — Motion Site</h3>
+            <p>Micro-interactions and fluid scrolling using GSAP and modern CSS.</p>
+            <div class="meta"><div class="tags"><span class="tag">GSAP</span><span class="tag">HTML/CSS</span></div><div class="actions"><span class="badge">Interaction</span></div></div>
+          </div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a class="card-link" href="project.html?id=3">
+          <div class="thumb"><img src="p-3.png" alt="Demo 3 screenshot"></div>
+          <div class="card-body">
+            <h3>Nexus SaaS — Concept</h3>
+            <p>Conceptual product focused on collaboration, realtime features and UX patterns.</p>
+            <div class="meta"><div class="tags"><span class="tag">React</span><span class="tag">Node.js</span></div><div class="actions"><span class="badge">Concept</span></div></div>
+          </div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a class="card-link" href="project.html?id=4">
+          <div class="thumb"><img src="p-4.png" alt="Demo 4 screenshot"></div>
+          <div class="card-body">
+            <h3>LuxStay — Property UX</h3>
+            <p>Booking engine and SSR-friendly Next.js architecture with TypeScript.</p>
+            <div class="meta"><div class="tags"><span class="tag">Next.js</span><span class="tag">TypeScript</span></div><div class="actions"><span class="badge">Product</span></div></div>
+          </div>
+        </a>
+      </article>
+
+      <!-- additional demo cards (placeholders) -->
+      <article class="card">
+        <a class="card-link" href="project.html?id=5">
+          <div class="thumb"><img src="p-1.png" alt="Demo 5 screenshot"></div>
+          <div class="card-body">
+            <h3>UI Experiment — Micro-Interactions</h3>
+            <p>Small interactive components and design system examples.</p>
+            <div class="meta"><div class="tags"><span class="tag">Design</span><span class="tag">Components</span></div><div class="actions"><span class="badge">Demo</span></div></div>
+          </div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a class="card-link" href="project.html?id=6">
+          <div class="thumb"><img src="p-2.png" alt="Demo 6 screenshot"></div>
+          <div class="card-body">
+            <h3>Realtime Chat — POC</h3>
+            <p>Proof-of-concept for real-time collaboration using WebSockets.</p>
+            <div class="meta"><div class="tags"><span class="tag">WebSocket</span><span class="tag">Node.js</span></div><div class="actions"><span class="badge">POC</span></div></div>
+          </div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a class="card-link" href="project.html?id=7">
+          <div class="thumb"><img src="p-3.png" alt="Demo 7 screenshot"></div>
+          <div class="card-body">
+            <h3>E-commerce — Cart UX</h3>
+            <p>Checkout flow design, performance optimizations and accessibility improvements.</p>
+            <div class="meta"><div class="tags"><span class="tag">Performance</span><span class="tag">Accessibility</span></div><div class="actions"><span class="badge">Case Study</span></div></div>
+          </div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a class="card-link" href="project.html?id=8">
+          <div class="thumb"><img src="p-4.png" alt="Demo 8 screenshot"></div>
+          <div class="card-body">
+            <h3>Design System — Tokens</h3>
+            <p>Systemizing colors, spacing and components for consistent product design.</p>
+            <div class="meta"><div class="tags"><span class="tag">Design</span><span class="tag">System</span></div><div class="actions"><span class="badge">Toolkit</span></div></div>
+          </div>
+        </a>
+      </article>
+    </div>
+  </main>
+
+  <footer class="proj-footer">
+    <p>© 2026 Ashim Dutta — Built with Three.js & modern web tech</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+  <script src="projects.js"></script>
