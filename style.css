@@ -376,7 +376,6 @@ body .intro .intro-1 {
   padding: 5vw 4vw;
   width: 100%;
   color: white;
-  min-height: 80vh;
 }
 .main .section-experience .exp-head {
   margin-bottom: 5vw;
@@ -640,75 +639,6 @@ body .intro .intro-1 {
   opacity: 0;
   z-index: 100;
 }
-
-.main .section-github {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  gap: 4vw;
-}
-
-.main .section-github .github-head {
-  display: flex;
-  gap: 2vw;
-  align-items: center;
-}
-
-.main .section-github .github-head h1 {
-  font-size: 3.5vw;
-  text-transform: uppercase;
-  line-height: 1.5;
-  font-family: "kinova";
-}
-
-.main .section-github .github-head .line {
-  width: 40%;
-  height: 0.5vw;
-  background-color: #baa876;
-}
-
-.main .section-github .github-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2vw;
-  align-items: center;
-}
-
-.main .section-github .github-link {
-  display: inline-block;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.main .section-github .github-link:hover {
-  transform: scale(1.02);
-  box-shadow: 0 12px 48px rgba(255, 76, 0, 0.3);
-}
-
-.main .section-github .github-chart {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  background: #1a1a1a;
-  border-radius: 10px;
-  margin: 0 auto;
-  transition: transform 0.3s ease;
-}
-
-.main .section-github .github-chart:hover {
-  transform: scale(1.02);
-}
-
-.main .section-github .github-text {
-  font-size: 1.2vw;
-  color: #baa876;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
 .main .section-8 {
   width: 100%;
   background-color: lawngreen;
@@ -834,12 +764,6 @@ body .intro .intro-1 {
   }
   .main .section-7 .certificate .line {
     width: 40%;
-  }
-  .main .section-github .github-head h1 {
-    font-size: 4vw;
-  }
-  .main .section-github .github-text {
-    font-size: 1.5vw;
   }
   .main .section-8 {
     display: none;
