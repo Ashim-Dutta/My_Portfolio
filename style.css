@@ -372,6 +372,57 @@ body .intro .intro-1 {
 .main .section-5 .tech-card:hover p {
   color: white;
 }
+.main .section-github {
+  padding: 5vw 4vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vw;
+}
+.main .section-github .github-head {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2vw;
+}
+.main .section-github .github-head h1 {
+  font-size: 5vw;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.5;
+  font-family: "kinova";
+}
+.main .section-github .github-head .line {
+  width: 30%;
+  height: 0.5vw;
+  background-color: #baa876;
+  margin-top: 1vw;
+}
+.main .section-github .github-container {
+  width: 100%;
+  max-width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vw;
+}
+.main .section-github .github-container .github-chart {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+  object-fit: contain;
+  border-radius: 1vw;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+.main .section-github .github-container .github-text {
+  font-size: 1.2vw;
+  color: #ccc;
+  text-align: center;
+  font-family: monospace;
+  margin-top: 1vw;
+}
 .main .section-experience {
   padding: 5vw 4vw;
   width: 100%;
@@ -507,6 +558,56 @@ body .intro .intro-1 {
 }
 .main .section-experience .timeline .exp-item ul li:last-child {
   margin-bottom: 0;
+}
+.main .section-github {
+  padding: 5vw 4vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vw;
+}
+.main .section-github .github-head {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2vw;
+}
+.main .section-github .github-head h1 {
+  font-size: 5vw;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.5;
+  font-family: "kinova";
+}
+.main .section-github .github-head .line {
+  width: 30%;
+  height: 0.5vw;
+  background-color: #baa876;
+  margin-top: 1vw;
+}
+.main .section-github .github-container {
+  width: 100%;
+  max-width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vw;
+}
+.main .section-github .github-container .github-chart {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 1vw;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+.main .section-github .github-container .github-text {
+  font-size: 1.2vw;
+  color: #ccc;
+  text-align: center;
+  font-family: monospace;
+  margin-top: 1vw;
 }
 .main .section-6 {
   padding: 2vw 4vw;
@@ -743,6 +844,27 @@ body .intro .intro-1 {
   .main .section-5 .tech-card {
     width: 25vw;
     height: 25vw;
+  }
+  .main .section-github {
+    padding: 5vw 4vw;
+  }
+  .main .section-github .github-head h1 {
+    font-size: 6vw;
+  }
+  .main .section-github .github-head .line {
+    width: 50%;
+  }
+  .main .section-github .github-container {
+    max-width: 100%;
+    gap: 1.5vw;
+  }
+  .main .section-github .github-container .github-chart {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 0.8vw;
+  }
+  .main .section-github .github-container .github-text {
+    font-size: 1.5vw;
   }
   .main .section-6 {
     gap: 10vw;
